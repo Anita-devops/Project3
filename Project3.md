@@ -15,4 +15,6 @@
 ![Apache Status3](./images/Apache-Status3-4.PNG)
 ![Apache Status3](./images/Apache-Status3-5.PNG)
 
-
+### To install Node.js on the server
+`sudo apt-get install -y nodejs`
+![Apache Status3](./images/Apache-Status3-6.PNG)
