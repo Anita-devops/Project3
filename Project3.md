@@ -63,7 +63,7 @@
 
 ## To start our server
 `node index.js`
-![Apache Status3](images/Apache-Status3-15.png)
+![Apache Status3](Images/Apache-Status3-15.png)
 ![Apache Status3](Images/Apache-Status3-16.png)
 
 ## Routes
