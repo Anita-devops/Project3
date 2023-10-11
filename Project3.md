@@ -66,6 +66,6 @@
 `cd routes`
 `touch api.js`
 `vi api.js`
+![Alt text](Images/Apache-Status3-17.png)
 
-![Apache Status3](./images/Apache-Status3-17.PNG)
 
