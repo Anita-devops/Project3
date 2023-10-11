@@ -3,8 +3,8 @@
 ### BACKEND CONFIGURATION
 ### To Update ubuntu
 `sudo apt update`
-![Apache Status](Images/Apache-Status3-1.png)
-![Apache Status](Images/Apache-Status3-2.png)
+![Apache Status3](Images/Apache-Status3-1.png)
+![Apache Status3](Images/Apache-Status3-2.png)
 
 
 ### To Upgrade ubuntu
@@ -13,8 +13,8 @@
 
 ### To get the location of Node.js software from Ubuntu repositories
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-![Apache Status3](images/Apache-Status3-4.png)
-![Apache Status3](images/Apache-Status3-5.png)
+![Apache Status3](Images/Apache-Status3-4.png)
+![Apache Status3](Images/Apache-Status3-5.png)
 
 ### To install Node.js on the server
 `sudo apt-get install -y nodejs`
