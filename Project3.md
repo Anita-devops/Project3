@@ -3,8 +3,9 @@
 ### BACKEND CONFIGURATION
 ### To Update ubuntu
 `sudo apt update`
-![Apache Status3](images/Apache-Status3-1.png)
-![Apache Status3](images/Apache-Status3-2.png)
+![Apache Status](Images/Apache-Status3-1.png)
+![Apache Status](Images/Apache-Status3-2.png)
+
 
 ### To Upgrade ubuntu
 `sudo apt upgrade`
@@ -57,7 +58,7 @@
 ## To start our server
 `node index.js`
 ![Apache Status3](images/Apache-Status3-15.png)
-![Apache Status3](Images/Apache-Status3-16.png)
+![Alt text](Images/Apache-Status3-16.png)
 
 ## Routes
 *To create a folder routes, create a file in it and write a command in the file*
@@ -67,4 +68,4 @@
 `vi api.js`
 ![Apache Status3](Images/Apache-Status3-17.png)
 
-
+## MONGODB DATABASE
