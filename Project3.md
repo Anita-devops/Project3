@@ -115,5 +115,30 @@
 ![Apache Status3](Images/Apache-Status3-21.png)
 ![Apache Status3](Images/Apache-Status3-22.png)
 
+## MONGODB DATABASE
+*Using mLab to store data. mLab provides MongoDB database as a service solution (DBaaS), to sign up for a shared clusters free account,  Sign up herewith link below. Follow the sign up process, select AWS as the cloud provider, and choose a region near you.*
 
+[Mongodb signup](https://www.mongodb.com/atlas-signup-from-mlab)
+
+-Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
+
+-In the image below, make sure you change the time of deleting the entry from 6 Hours to 1 Week
+
+-In the index.js file, we specified process.env to access environment variables
+
+*Create a file in your Todo directory and name it .env.*
+
+`Touch .env`
+
+*Open the file*
+
+`vi .env`
+
+*Add the connection to access the databade in it and edit username, password, network address and database.*
+
+*To get the connection string*
+
+![Apache Status3](Images/Apache-Status3-23.png)
+![Apache Status3](Images/Apache-Status3-24.png)
+![Apache Status3](Images/Apache-Status3-25.png)
 
