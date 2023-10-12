@@ -142,3 +142,21 @@
 ![Apache Status3](Images/Apache-Status3-24.png)
 ![Apache Status3](Images/Apache-Status3-25.png)
 
+*For Node.js to connect to database, we need to update the index.js to reflect the use of .env*
+*Simply delete existing content in the file, and update it following the steps below*
+
+`vim index.js`
+`esc`
+`:%d` 
+*Press enter*
+
+-The entire content will be deleted, then,
+
+-Press i to enter the insert mode in vim
+
+-Now, paste the entire code below in the file.
+
+![Apache Status3](Images/Apache-Status3-26.png)
+![Apache Status3](Images/Apache-Status3-27.png)
+
+
