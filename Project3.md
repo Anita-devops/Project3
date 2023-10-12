@@ -63,6 +63,7 @@
 
 ## To start our server
 `node index.js`
+
 ![Apache Status3](Images/Apache-Status3-15.png)
 ![Apache Status3](Images/Apache-Status3-16.png)
 
@@ -74,4 +75,45 @@
 `vi api.js`
 ![Apache Status3](Images/Apache-Status3-17.png)
 
-## MONGODB DATABASE
+## MODELS
+
+*A model needs ti be created in order for the application to use Mongodb. The model also defines the database schema. A schema is the blueprint of how the database will be constructed*
+*Mongoose has to be installed to create Schema and a model*
+
+### Change directory back Todo folder with cd .. and install Mongoose
+`npm install mongoose`
+![Apache Status3](Images/Apache-Status3-18.png)
+
+### Create a new folder models
+`mkdir models`
+
+### Change directory into the newly created ‘models’ folder
+`cd models`
+
+### Inside the models folder, create a file and name it todo.js
+`touch todo.js`
+
+### Alernatively, combine the 3 codes above as below
+
+`mkdir models && cd models && touch todo.js`
+
+### Next open the file created with vim todo.js then paste the code below in the file:
+
+![Apache Status3](Images/Apache-Status3-19.png)
+
+### The image below is the final product
+![Apache Status3](Images/Apache-Status3-20.png)
+
+## To update our routes from the file api.js in ‘routes’ directory to make use of the new model
+## In Routes directory, open api.js with vim api.js, delete the code inside with :%d command and paste there code below into it then save and exit with :wqa!
+
+`vim api.js`
+
+`:%d`
+
+`wqa!`
+![Apache Status3](Images/Apache-Status3-21.png)
+![Apache Status3](Images/Apache-Status3-22.png)
+
+
+
