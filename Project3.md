@@ -159,4 +159,27 @@
 ![Apache Status3](Images/Apache-Status3-26.png)
 ![Apache Status3](Images/Apache-Status3-27.png)
 
+*Start your server using the command*
 
+`node index.js`
+
+![Apache Status3](Images/Apache-Status3-28.png)
+
+### Testing Backend Code without Frontend using RESTful API
+
+-In this project, we will use Postman to test our API.
+
+[To Install POSTMAN](https://www.postman.com/downloads/)
+
+-You should test all the API endpoints and make sure they are working. For the endpoints that require body, you should send JSON back with the necessary fields since it’s what we setup in our code.
+
+-Open Postman
+
+-create a POST request to the API 
+http://<PublicIP-or-PublicDNS>:5000/api/todos. 
+
+*This request sends a new task to our To-Do list so the application could store it in the database.*
+
+*Note: make sure your set header key Content-Type as application/json as below*
+
+![Apache Status3](Images/Apache-Status3-29.png)
