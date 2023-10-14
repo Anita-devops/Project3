@@ -240,7 +240,7 @@ http://<PublicIP-or-PublicDNS>:5000/api/todos.
 
 ![Apache Status3](Images/Apache-Status3-39.png)
 
-- Go back to Todo folder and run the command below, the app should open and start running on localhost:3000
+- Go back to Todo directory and run the command below, the app should open and start running on localhost:3000
 
 `apm run dev`
 ![Apache Status3](Images/Apache-Status3-40.png)
@@ -248,8 +248,52 @@ http://<PublicIP-or-PublicDNS>:5000/api/todos.
 
 *Running the app on localhost:3000
 
+- Note: In order to be able to access the application from the Internet, open TCP port 3000 on EC2 by adding a new Security Group rule.
+
 [App on Localhost:3000](http://34.239.137.17:3000/)
 ![Apache Status3](Images/Apache-Status3-42.png)
+
+### Creating your React Components
+
+*From your Todo directory run*
+
+`cd client`
+
+*move to the src directory*
+
+`cd src`
+
+*Create a folder called components in the src*
+
+`mkdir components`
+
+*Move into the components directory with the command below*
+
+`cd components`
+
+*Inside ‘components’ directory create three files Input.js, ListTodo.js and Todo.js.*
+
+`Touch input.js ListTodo.js Todo.js`
+
+*Open Input.js file*
+
+`vi Input.js`
+![Apache Status3](Images/Apache-Status3-43.png)
+
+*replace code with the one below*
+![Apache Status3](Images/Apache-Status3-44.png)
+![Apache Status3](Images/Apache-Status3-45.png)
+
+*Next Axios is installed, which is a Promise based HTTP client for the browser and node.js. This is done in the client folder. The command below is used to change directory to client folder*
+
+`cd ../..`
+
+*To install Axious*
+
+`npm install Axios`
+
+![Apache Status3](Images/Apache-Status3-46.png)
+
 
 
 
