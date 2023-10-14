@@ -120,11 +120,11 @@
 
 [Mongodb signup](https://www.mongodb.com/atlas-signup-from-mlab)
 
--Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
+- Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
 
--In the image below, make sure you change the time of deleting the entry from 6 Hours to 1 Week
+- In the image below, make sure you change the time of deleting the entry from 6 Hours to 1 Week
 
--In the index.js file, we specified process.env to access environment variables
+- In the index.js file, we specified process.env to access environment variables
 
 *Create a file in your Todo directory and name it .env.*
 
@@ -150,11 +150,11 @@
 `:%d` 
 *Press enter*
 
--The entire content will be deleted, then,
+- The entire content will be deleted, then,
 
--Press i to enter the insert mode in vim
+- Press i to enter the insert mode in vim
 
--Now, paste the entire code below in the file.
+- Now, paste the entire code below in the file.
 
 ![Apache Status3](Images/Apache-Status3-26.png)
 ![Apache Status3](Images/Apache-Status3-27.png)
@@ -167,15 +167,15 @@
 
 ### Testing Backend Code without Frontend using RESTful API
 
--In this project, we will use Postman to test our API.
+- In this project, we will use Postman to test our API.
 
 [To Install POSTMAN](https://www.postman.com/downloads/)
 
 -You should test all the API endpoints and make sure they are working. For the endpoints that require body, you should send JSON back with the necessary fields since it’s what we setup in our code.
 
--Open Postman
+- Open Postman
 
--create a POST request to the API 
+- create a POST request to the API 
 http://<PublicIP-or-PublicDNS>:5000/api/todos. 
 
 *This request sends a new task to our To-Do list so the application could store it in the database.*
@@ -193,7 +193,7 @@ http://<PublicIP-or-PublicDNS>:5000/api/todos.
 
 
 ## FRONTEND CREATION
-*To start out with the frontend of the To-do app, we will use the create-react-app command to scaffold our app.*
+*To start out with the frontend of the To-do app, we will use the create-react-app command to scaffold our app. This will create a new folder in the Todo directory called client, where all the react code will be added.*
 
 -Run the code below in the Todo directory
 
@@ -202,6 +202,54 @@ http://<PublicIP-or-PublicDNS>:5000/api/todos.
 ![Apache Status3](Images/Apache-Status3-32.png)
 ![Apache Status3](Images/Apache-Status3-33.png)
 ![Apache Status3](Images/Apache-Status3-34.png)
+
+### Running a React App
+*Some dependencies need to be installed first.*
+
+1. Install concurrently- It is used to run more than one command simultaneously from the same terminal window.
+
+`npm install concurrently --save-dev`
+![Apache Status3](Images/Apache-Status3-35.png)
+
+2. Install nodemon. It is used to run and monitor the server. If there is any change in the server code, nodemon will restart it automatically and load the new changes.
+
+`npm install nodemon --save-dev`
+![Apache Status3](Images/Apache-Status3-36.png)
+
+3. In Todo folder open the package.json file. Change the highlighted part of the below screenshot and replace with the code below.
+
+`"scripts": {
+"start": "node index.js",
+"start-watch": "nodemon index.js",
+"dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+},`
+
+![Apache Status3](Images/Apache-Status3-37.png)
+![Apache Status3](Images/Apache-Status3-38.png)
+
+### Configure Proxy in package.json
+- Change directory to client
+
+`cd Client`
+
+- Open the package.json file
+
+`vi package.json`
+
+- Add the key value pair in the package.json file "proxy": "http://localhost:5000".
+
+![Apache Status3](Images/Apache-Status3-39.png)
+
+- Go back to Todo folder and run the command below, the app should open and start running on localhost:3000
+
+`apm run dev`
+![Apache Status3](Images/Apache-Status3-40.png)
+![Apache Status3](Images/Apache-Status3-41.png)
+
+*Running the app on localhost:3000
+
+[App on Localhost:3000](http://34.239.137.17:3000/)
+![Apache Status3](Images/Apache-Status3-42.png)
 
 
 
