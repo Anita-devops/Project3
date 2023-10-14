@@ -294,6 +294,61 @@ http://<PublicIP-or-PublicDNS>:5000/api/todos.
 
 ![Apache Status3](Images/Apache-Status3-46.png)
 
+*Next, go to the components directory*
+
+`cd src/components`
+
+*Open the ListTodo.js file and past the command below*
+
+`vi ListTodo.js`
+![Apache Status3](Images/Apache-Status3-47.png)
+
+`vi Todo.js`
+![Apache Status3](Images/Apache-Status3-48.png)
+![Apache Status3](Images/Apache-Status3-49.png)
+
+*We need to make little adjustment to our react code. Delete the logo and adjust our App.js*
+
+-move to the src folder
+
+`cd ..`
+
+*In the src folder, run the command below and replace with the codes below*
+
+`vi App.js`
+
+![Apache Status3](Images/Apache-Status3-50.png)
+
+*In the src folder, run the command below and replace with the codes below*
+
+`vi App.css`
+
+![Apache Status3](Images/Apache-Status3-51.png)
+![Apache Status3](Images/Apache-Status3-52.png)
+![Apache Status3](Images/Apache-Status3-53.png)
+
+*In the src folder, run the command below and replace with the codes below*
+
+`vim index.css`
+![Apache Status3](Images/Apache-Status3-54.png)
+
+*Go back to the Todo directory*
+
+`cd ../..`
+
+![Apache Status3](Images/Apache-Status3-55.png)
+
+*Run the command below*
+
+`npm run dev`
+![Apache Status3](Images/Apache-Status3-56.png)
+![Apache Status3](Images/Apache-Status3-57.png)
 
 
+*The To-Do app is ready and fully functional: creating a task, deleting a task and viewing all your tasks.*
 
+[Todo App](http://34.239.137.17:3000/)
+
+![Apache Status3](Images/Apache-Status3-58.png)
+
+*In this Project 3 a simple To-Do App was created and deployed to MERN stack. A frontend application was written using React.js that communicates with a backend application written using Expressjs. A Mongodb backend was also created for storing tasks in a database.
