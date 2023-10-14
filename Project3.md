@@ -183,3 +183,25 @@ http://<PublicIP-or-PublicDNS>:5000/api/todos.
 *Note: make sure your set header key Content-Type as application/json as below*
 
 ![Apache Status3](Images/Apache-Status3-29.png)
+![Apache Status3](Images/Apache-Status3-30.png)
+
+*The GET request retrieves all existing records from out To-do application.*
+
+*To create a GET request to your API on http://<PublicIP-or-PublicDNS>:5000/api/todos, select "GET" and send*
+
+![Apache Status3](Images/Apache-Status3-31.png)
+
+
+## FRONTEND CREATION
+*To start out with the frontend of the To-do app, we will use the create-react-app command to scaffold our app.*
+
+-Run the code below in the Todo directory
+
+` npx create-react-app client`
+
+![Apache Status3](Images/Apache-Status3-32.png)
+![Apache Status3](Images/Apache-Status3-33.png)
+![Apache Status3](Images/Apache-Status3-34.png)
+
+
+
